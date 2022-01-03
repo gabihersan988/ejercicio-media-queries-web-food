@@ -27,7 +27,7 @@ a {
 .menu-btn {
   width: 3rem;
   height: 3rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -104,7 +104,35 @@ main h1 {
   background-color: rgb(221, 134, 34);
 }
 
+article img:hover {
+  transform: scale( 1.2 );
+}
+.food-item img {
+  height: 15rem;
+  width: 100%;
+}
+article img {
+  transition: transform 0.2s;
+}
+
 /**
 * Media query a partir de aquí
 * @media...
 **/
+@media (max-width: 48rem) {
+  main h1 {
+    font-size: 2rem; 
+  }
+  #latest-products ul {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.food-item-content h2 {
+  color: rgb(11, 11, 248);
+}
+
+
+}
+
+
